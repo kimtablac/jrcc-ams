@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="JRCC-AMS.exe" version="1.0.0.3" publicKeyToken="32f10f286c074380" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="JRCC-AMS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="JRCC-AMS.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Google.Protobuf.dll" size="294400">
+      <assemblyIdentity name="Google.Protobuf" version="3.5.1.0" publicKeyToken="A7D26565BAC4D604" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kmmLSyM9YCkmP+X33YMDTg/6sJlFHUuInLwRv1o/LXM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JRCC-AMS.exe" size="173536">
+      <assemblyIdentity name="JRCC-AMS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VkQ+lFdSxXtB5HoqB4n9TSyJcbc6ED7bAuJ5wh7g59k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="698368">
+      <assemblyIdentity name="MySql.Data" version="8.0.12.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>o1A1TiMHyyY2HLODhWlzi01juSSiEk3jKsgc9fnbhpo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="JRCC-AMS.exe.config" size="188">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VDy5/VrQni+RSOb/6uEMWMc6bGQEaa2e2UdeWG+KK1I=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Kimpoy-PC\Kimpoy" issuerKeyHash="fd4eb071b281c569fe9a38f888a9fd2e2228223c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>JvdNjzs6F56Lf9kTAalXEcfREBwvg0R/bscFkq+dpvM=</DigestValue></Reference></SignedInfo><SignatureValue>cIPYOW3j2RD6rLNErQsIbazqTMPq0iSIy5FLiFWkwHjJSMJvKmxkMlRfW+iykTsenOb7XK1yY/PZr4IQBy3RVUME2N9jS+NOz1a1KCM7yStFScHGXQUdfgYIqNkLQhp+NV0e96l+laRVlvlQ5uFdYSQrFirfb1vFLY+3u9VcWYQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>r0CuvQ2hZBSb8OCxVwScJ5DQw/HHCc36AaEbJAfgxl/XbcN79ojqQewm8HPrHwqemDbfTrvcMglar2XLh04WjXXVDc+4Ux4FSoK+pyZREqXmZxWfNMinRBN7xt8TfdrADocNALnFTmaNjhnqJsiy8T3rv1mUmpRWyBODhAiwSps=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f3a69daf9205c76e7f44832f1c10d1c71157a90113d97f8b9e173a3b8f4df726" Description="" Url=""><as:assemblyIdentity name="JRCC-AMS.exe" version="1.0.0.3" publicKeyToken="32f10f286c074380" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Kimpoy-PC\Kimpoy</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>2BE3EWtQPDwKmcz5/kHdbXZ8GPQL7sawgLgSPZrmoCU=</DigestValue></Reference></SignedInfo><SignatureValue>mgmsQcg+jAQsY9tV8Z+Vq01uaZLxNJD7Uk5Qgup4izHfGuHZ4UK+kxCa/3rDXZVDOZrTHTmfCPUUnQJVv2FAjq+pmXzCE477p85E7QFfn2WjXAqe7IOVJ1AsGu71OoG01SFENoeVhBokTynz7ryCBcVnqoQmaghdlAW9co45YiI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>r0CuvQ2hZBSb8OCxVwScJ5DQw/HHCc36AaEbJAfgxl/XbcN79ojqQewm8HPrHwqemDbfTrvcMglar2XLh04WjXXVDc+4Ux4FSoK+pyZREqXmZxWfNMinRBN7xt8TfdrADocNALnFTmaNjhnqJsiy8T3rv1mUmpRWyBODhAiwSps=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQSALqgSNUx7pMV2Iaj2zBFDANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAASwBpAG0AcABvAHkALQBQAEMAXABLAGkAbQBwAG8AeTAeFw0yMDAxMzAwMjI2MTBaFw0yMTAxMjkwODI2MTBaMCsxKTAnBgNVBAMeIABLAGkAbQBwAG8AeQAtAFAAQwBcAEsAaQBtAHAAbwB5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCvQK69DaFkFJvw4LFXBJwnkNDD8ccJzfoBoRskB+DGX9dtw3v2iOpB7Cbwc+sfCp6YNt9Ou9wyCVqvZcuHThaNddUNz7hTHgVKgr6nJlESpeZnFZ80yKdEE3vG3xN92sAOhw0AucVOZo2OGeomyLLxPeu/WZSalFbIE4OECLBKmwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAF+JJ1fxPReldbY9LJaAvgjGpmLKVO7qm3FH+9ERDyn0RKAG4mahnDCydrWZYfwCISoC4JeyvS10oBUajpQtni7//p03YRgkoibvOoO9QnMe5eOB06hPrBENShs9vH4RhO+Ey3SEeSBu+PL60JnOX5UoVu21G4I8dJRGQB+unioT</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
